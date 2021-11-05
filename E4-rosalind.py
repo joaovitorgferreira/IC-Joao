@@ -1,14 +1,20 @@
-data = open('teste.txt','r')
-teste = data.readline()
-num = 1
-off = 0
-num_sem_off = num_sem_off+num
-num = num_sem_off+off
-#m1 1
-#m2 1
-#m3 1+(3*1)
-#m4 1+(3*1)+(1*3)
-#m5 1+3+(1*3)+(1+3*1)*3
+data = open('rosalind_fib.txt','r').readline()
+lista = list(data)
+print(lista)
+
+k = int(lista[2])
+n = int(lista[0])
+sequencia_pop = [0,1] #inicia a sequência desde o mês 1
+indice = 1
+
+for pop in sequencia_pop:
+    if len(sequencia_pop)<= n:
+        sequencia_pop.append(sequencia_pop[indice-1]*k+(sequencia_pop[indice]))
+        indice = indice + 1
+print(sequencia_pop)
+
+
+
 
 
 
