@@ -1,9 +1,9 @@
 data = open('rosalind_fib.txt','r').readline()
 lista = list(data)
-print(lista)
+elemento1 = str(lista[0])+str(lista[1])
 
-k = int(lista[2])
-n = int(lista[0])
+k = int(lista[3])
+n = int(elemento1)
 sequencia_pop = [0,1] #inicia a sequência desde o mês 1
 indice = 1
 
