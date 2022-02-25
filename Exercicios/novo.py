@@ -1,0 +1,2 @@
+nome = list()
+print(nome)
